@@ -22,6 +22,7 @@
 		1F90C99A1D42C63B005B8FE3 /* Welcome_index.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F90C9991D42C63B005B8FE3 /* Welcome_index.swift */; };
 		1F90C99C1D42D0B2005B8FE3 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F90C99B1D42D0B2005B8FE3 /* Login.swift */; };
 		1F90C99E1D42EC00005B8FE3 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F90C99D1D42EC00005B8FE3 /* Register.swift */; };
+		1FF8250A1D434FC500970BCF /* Home_principal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF825091D434FC400970BCF /* Home_principal.swift */; };
 		F93C8A6B951ACB856BB644E6 /* Pods_Wuorks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 753E07C797B7C413B8144D6E /* Pods_Wuorks.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +66,7 @@
 		1F90C9991D42C63B005B8FE3 /* Welcome_index.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Welcome_index.swift; sourceTree = "<group>"; };
 		1F90C99B1D42D0B2005B8FE3 /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		1F90C99D1D42EC00005B8FE3 /* Register.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
+		1FF825091D434FC400970BCF /* Home_principal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home_principal.swift; sourceTree = "<group>"; };
 		753E07C797B7C413B8144D6E /* Pods_Wuorks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wuorks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C7217B4EBA611F921BCEECE /* Pods-Wuorks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wuorks.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wuorks/Pods-Wuorks.release.xcconfig"; sourceTree = "<group>"; };
 		F2AAB8847A7FD79C39372639 /* Pods-Wuorks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wuorks.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Wuorks/Pods-Wuorks.debug.xcconfig"; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 				1F90C99B1D42D0B2005B8FE3 /* Login.swift */,
 				1F90C99D1D42EC00005B8FE3 /* Register.swift */,
 				1F1AB7E31D430BDA00A01FFA /* Home.swift */,
+				1FF825091D434FC400970BCF /* Home_principal.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -404,6 +407,7 @@
 				1F90C9961D42C103005B8FE3 /* Welcome.swift in Sources */,
 				1F1AB7E41D430BDA00A01FFA /* Home.swift in Sources */,
 				1F1AB7E21D42FD5000A01FFA /* Config.swift in Sources */,
+				1FF8250A1D434FC500970BCF /* Home_principal.swift in Sources */,
 				1F90C9981D42C164005B8FE3 /* Globals_functions.swift in Sources */,
 				1F90C99C1D42D0B2005B8FE3 /* Login.swift in Sources */,
 				1F90C99E1D42EC00005B8FE3 /* Register.swift in Sources */,

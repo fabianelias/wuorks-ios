@@ -42,8 +42,8 @@ class Login_model {
                 }else{
                     let data = res["data"] as! NSArray
                     let username = data[0]["username"] as! String
-                    //let name     = data[0]["name"] as! String
-                    //let lastname = data[0]["last_name"] as! String
+                    let name     = data[0]["name"] as! String
+                    let lastname = data[0]["last_name_p"] as! String
                     let avatar   = data[0]["avatar"] as! String
                     
                     resp = "\(username)"
@@ -52,7 +52,7 @@ class Login_model {
                     prefs.setBool(true,forKey:"isUserLoggedIn");
                     
                     prefs.setValue("\(username)", forKey: "username")
-                   // prefs.setValue("\(name) \(lastname)", forKey: "name")
+                    prefs.setValue("\(name) \(lastname)", forKey: "name")
                     prefs.setValue("\(avatar)", forKey: "avatar")
                     
                     prefs.synchronize()
