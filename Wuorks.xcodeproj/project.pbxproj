@@ -14,6 +14,11 @@
 		1F90C96D1D42B5A1005B8FE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F90C96B1D42B5A1005B8FE3 /* LaunchScreen.storyboard */; };
 		1F90C9781D42B5A2005B8FE3 /* WuorksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F90C9771D42B5A2005B8FE3 /* WuorksTests.swift */; };
 		1F90C9831D42B5A2005B8FE3 /* WuorksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F90C9821D42B5A2005B8FE3 /* WuorksUITests.swift */; };
+		1F90C9961D42C103005B8FE3 /* Welcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F90C9951D42C103005B8FE3 /* Welcome.swift */; };
+		1F90C9981D42C164005B8FE3 /* Globals_functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F90C9971D42C164005B8FE3 /* Globals_functions.swift */; };
+		1F90C99A1D42C63B005B8FE3 /* Welcome_index.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F90C9991D42C63B005B8FE3 /* Welcome_index.swift */; };
+		1F90C99C1D42D0B2005B8FE3 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F90C99B1D42D0B2005B8FE3 /* Login.swift */; };
+		1F90C99E1D42EC00005B8FE3 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F90C99D1D42EC00005B8FE3 /* Register.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		1F90C97E1D42B5A2005B8FE3 /* WuorksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WuorksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F90C9821D42B5A2005B8FE3 /* WuorksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WuorksUITests.swift; sourceTree = "<group>"; };
 		1F90C9841D42B5A2005B8FE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F90C9951D42C103005B8FE3 /* Welcome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Welcome.swift; sourceTree = "<group>"; };
+		1F90C9971D42C164005B8FE3 /* Globals_functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Globals_functions.swift; sourceTree = "<group>"; };
+		1F90C9991D42C63B005B8FE3 /* Welcome_index.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Welcome_index.swift; sourceTree = "<group>"; };
+		1F90C99B1D42D0B2005B8FE3 /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		1F90C99D1D42EC00005B8FE3 /* Register.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +107,11 @@
 		1F90C9611D42B5A0005B8FE3 /* Wuorks */ = {
 			isa = PBXGroup;
 			children = (
+				1F90C9941D42B858005B8FE3 /* Config */,
+				1F90C9931D42B84C005B8FE3 /* Libraries */,
+				1F90C9921D42B843005B8FE3 /* Views */,
+				1F90C9911D42B82C005B8FE3 /* Models */,
+				1F90C9901D42B81D005B8FE3 /* Controllers */,
 				1F90C9621D42B5A1005B8FE3 /* AppDelegate.swift */,
 				1F90C9641D42B5A1005B8FE3 /* ViewController.swift */,
 				1F90C9661D42B5A1005B8FE3 /* Main.storyboard */,
@@ -123,6 +138,46 @@
 				1F90C9841D42B5A2005B8FE3 /* Info.plist */,
 			);
 			path = WuorksUITests;
+			sourceTree = "<group>";
+		};
+		1F90C9901D42B81D005B8FE3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1F90C9951D42C103005B8FE3 /* Welcome.swift */,
+				1F90C9991D42C63B005B8FE3 /* Welcome_index.swift */,
+				1F90C99B1D42D0B2005B8FE3 /* Login.swift */,
+				1F90C99D1D42EC00005B8FE3 /* Register.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		1F90C9911D42B82C005B8FE3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		1F90C9921D42B843005B8FE3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		1F90C9931D42B84C005B8FE3 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1F90C9971D42C164005B8FE3 /* Globals_functions.swift */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		1F90C9941D42B858005B8FE3 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Config;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +315,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F90C9651D42B5A1005B8FE3 /* ViewController.swift in Sources */,
+				1F90C9961D42C103005B8FE3 /* Welcome.swift in Sources */,
+				1F90C9981D42C164005B8FE3 /* Globals_functions.swift in Sources */,
+				1F90C99C1D42D0B2005B8FE3 /* Login.swift in Sources */,
+				1F90C99E1D42EC00005B8FE3 /* Register.swift in Sources */,
+				1F90C99A1D42C63B005B8FE3 /* Welcome_index.swift in Sources */,
 				1F90C9631D42B5A1005B8FE3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -403,6 +463,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Wuorks/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "wuorks-inc.Wuorks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -414,6 +475,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Wuorks/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "wuorks-inc.Wuorks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
