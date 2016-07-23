@@ -17,6 +17,8 @@ class Welcome_index: UIViewController, UIPageViewControllerDataSource {
     
     var globalFunction = Globals_functions()
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -132,5 +134,17 @@ class Welcome_index: UIViewController, UIPageViewControllerDataSource {
     
     func presentationIndexForPageViewController(pageViewController: UIPageViewController) -> Int {
         return 0
+    }
+    
+    
+    override func viewDidAppear(animated: Bool)
+    {
+        
+        let isUserLoggedIn = NSUserDefaults.standardUserDefaults().boolForKey("isUserLoggedIn");
+        
+        if(isUserLoggedIn){
+            self.performSegueWithIdentifier("userConnect", sender: self);
+        }
+        
     }
 }

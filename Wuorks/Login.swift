@@ -9,9 +9,12 @@
 import UIKit
 import Foundation
 
+
 class Login: UIViewController, UITextFieldDelegate {
     
-    var gbf = Globals_functions()
+    var gbf = Globals_functions()   //Libreria
+    var login_model = Login_model() //Modelo
+    
     
     @IBOutlet weak var titleView: UILabel!
     @IBOutlet weak var loginFacebook: UIButton!
@@ -46,11 +49,12 @@ class Login: UIViewController, UITextFieldDelegate {
         
     }
     
-    /*********************************************************************
-    * @login(): FUNCIÓN QUE VALIDAD EL INGRESO DEL USUARIO MEDIANTE EMAIL
-    * Y PASSWORD.
-    *********************************************************************/
+    //---------------------------------------------------------------------
+    // @login(): FUNCIÓN QUE VALIDAD EL INGRESO DEL USUARIO MEDIANTE EMAIL
+    // Y PASSWORD.
+    //---------------------------------------------------------------------
     @IBAction func login(sender: AnyObject) {
+        
         
         if self.inputEmail.text! == "" || self.inputPass.text! == ""{
             
@@ -62,11 +66,34 @@ class Login: UIViewController, UITextFieldDelegate {
             
         }else{
             
-            let alertController = UIAlertController(title: "Success", message:
-                "", preferredStyle: UIAlertControllerStyle.Alert)
-            alertController.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default,handler: nil))
+            let login = login_model.login(self.inputEmail.text!, password: self.inputPass.text!)
             
-            self.presentViewController(alertController, animated: true, completion: nil)
+            if login == "1"{
+                let alertController = UIAlertController(title: "Error", message:
+                    "El email o contraseña no coincide", preferredStyle: UIAlertControllerStyle.Alert)
+                alertController.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default,handler: nil))
+                self.presentViewController(alertController, animated: true, completion: nil)
+                
+            }else if login == "2"{
+                
+                let alertController = UIAlertController(title: "Error", message:
+                    "Necesitas validar tu cuenta de email", preferredStyle: UIAlertControllerStyle.Alert)
+                alertController.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default,handler: nil))
+                
+                self.presentViewController(alertController, animated: true, completion: nil)
+                
+            }else{
+                
+                /*
+                let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+                let miVistaDos = storyBoard.instantiateViewControllerWithIdentifier("welcome") as! Welcome_index
+                self.presentViewController(miVistaDos, animated:true, completion:nil)
+                */
+                
+                self.performSegueWithIdentifier("loginSucess", sender: self);
+                //self.dismissViewControllerAnimated(true, completion:nil);
+                
+            }
             
         }
         

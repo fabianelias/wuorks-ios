@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F1AB7DE1D42F53C00A01FFA /* Login_model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1AB7DD1D42F53C00A01FFA /* Login_model.swift */; };
+		1F1AB7E21D42FD5000A01FFA /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1AB7E11D42FD5000A01FFA /* Config.swift */; };
+		1F1AB7E41D430BDA00A01FFA /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1AB7E31D430BDA00A01FFA /* Home.swift */; };
 		1F90C9631D42B5A1005B8FE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F90C9621D42B5A1005B8FE3 /* AppDelegate.swift */; };
 		1F90C9651D42B5A1005B8FE3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F90C9641D42B5A1005B8FE3 /* ViewController.swift */; };
 		1F90C9681D42B5A1005B8FE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F90C9661D42B5A1005B8FE3 /* Main.storyboard */; };
@@ -19,6 +22,7 @@
 		1F90C99A1D42C63B005B8FE3 /* Welcome_index.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F90C9991D42C63B005B8FE3 /* Welcome_index.swift */; };
 		1F90C99C1D42D0B2005B8FE3 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F90C99B1D42D0B2005B8FE3 /* Login.swift */; };
 		1F90C99E1D42EC00005B8FE3 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F90C99D1D42EC00005B8FE3 /* Register.swift */; };
+		F93C8A6B951ACB856BB644E6 /* Pods_Wuorks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 753E07C797B7C413B8144D6E /* Pods_Wuorks.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +43,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F1AB7DD1D42F53C00A01FFA /* Login_model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login_model.swift; sourceTree = "<group>"; };
+		1F1AB7DF1D42FADD00A01FFA /* Wuorks-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Wuorks-Bridging-Header.h"; sourceTree = "<group>"; };
+		1F1AB7E11D42FD5000A01FFA /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		1F1AB7E31D430BDA00A01FFA /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		1F90C95F1D42B5A0005B8FE3 /* Wuorks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wuorks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F90C9621D42B5A1005B8FE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F90C9641D42B5A1005B8FE3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +65,9 @@
 		1F90C9991D42C63B005B8FE3 /* Welcome_index.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Welcome_index.swift; sourceTree = "<group>"; };
 		1F90C99B1D42D0B2005B8FE3 /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		1F90C99D1D42EC00005B8FE3 /* Register.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
+		753E07C797B7C413B8144D6E /* Pods_Wuorks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wuorks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C7217B4EBA611F921BCEECE /* Pods-Wuorks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wuorks.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wuorks/Pods-Wuorks.release.xcconfig"; sourceTree = "<group>"; };
+		F2AAB8847A7FD79C39372639 /* Pods-Wuorks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wuorks.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Wuorks/Pods-Wuorks.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F93C8A6B951ACB856BB644E6 /* Pods_Wuorks.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +103,8 @@
 				1F90C9761D42B5A2005B8FE3 /* WuorksTests */,
 				1F90C9811D42B5A2005B8FE3 /* WuorksUITests */,
 				1F90C9601D42B5A0005B8FE3 /* Products */,
+				7FB1B00C8537070CCD53F1E9 /* Pods */,
+				AFA69988914AEDF999DD2513 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,6 +161,7 @@
 				1F90C9991D42C63B005B8FE3 /* Welcome_index.swift */,
 				1F90C99B1D42D0B2005B8FE3 /* Login.swift */,
 				1F90C99D1D42EC00005B8FE3 /* Register.swift */,
+				1F1AB7E31D430BDA00A01FFA /* Home.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -154,6 +169,7 @@
 		1F90C9911D42B82C005B8FE3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				1F1AB7DD1D42F53C00A01FFA /* Login_model.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -169,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				1F90C9971D42C164005B8FE3 /* Globals_functions.swift */,
+				1F1AB7DF1D42FADD00A01FFA /* Wuorks-Bridging-Header.h */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -176,8 +193,26 @@
 		1F90C9941D42B858005B8FE3 /* Config */ = {
 			isa = PBXGroup;
 			children = (
+				1F1AB7E11D42FD5000A01FFA /* Config.swift */,
 			);
 			name = Config;
+			sourceTree = "<group>";
+		};
+		7FB1B00C8537070CCD53F1E9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F2AAB8847A7FD79C39372639 /* Pods-Wuorks.debug.xcconfig */,
+				8C7217B4EBA611F921BCEECE /* Pods-Wuorks.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AFA69988914AEDF999DD2513 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				753E07C797B7C413B8144D6E /* Pods_Wuorks.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,9 +222,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F90C9871D42B5A2005B8FE3 /* Build configuration list for PBXNativeTarget "Wuorks" */;
 			buildPhases = (
+				0BF033A9F3D2D074124DEC52 /* Check Pods Manifest.lock */,
 				1F90C95B1D42B5A0005B8FE3 /* Sources */,
 				1F90C95C1D42B5A0005B8FE3 /* Frameworks */,
 				1F90C95D1D42B5A0005B8FE3 /* Resources */,
+				320F9CA11474A9E8E647F6BE /* Embed Pods Frameworks */,
+				4B3DCBB68C9B4411D47A603A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -309,6 +347,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0BF033A9F3D2D074124DEC52 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		320F9CA11474A9E8E647F6BE /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wuorks/Pods-Wuorks-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B3DCBB68C9B4411D47A603A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wuorks/Pods-Wuorks-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1F90C95B1D42B5A0005B8FE3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -316,9 +402,12 @@
 			files = (
 				1F90C9651D42B5A1005B8FE3 /* ViewController.swift in Sources */,
 				1F90C9961D42C103005B8FE3 /* Welcome.swift in Sources */,
+				1F1AB7E41D430BDA00A01FFA /* Home.swift in Sources */,
+				1F1AB7E21D42FD5000A01FFA /* Config.swift in Sources */,
 				1F90C9981D42C164005B8FE3 /* Globals_functions.swift in Sources */,
 				1F90C99C1D42D0B2005B8FE3 /* Login.swift in Sources */,
 				1F90C99E1D42EC00005B8FE3 /* Register.swift in Sources */,
+				1F1AB7DE1D42F53C00A01FFA /* Login_model.swift in Sources */,
 				1F90C99A1D42C63B005B8FE3 /* Welcome_index.swift in Sources */,
 				1F90C9631D42B5A1005B8FE3 /* AppDelegate.swift in Sources */,
 			);
@@ -460,25 +549,32 @@
 		};
 		1F90C9881D42B5A2005B8FE3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2AAB8847A7FD79C39372639 /* Pods-Wuorks.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Wuorks/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "wuorks-inc.Wuorks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Wuorks/Wuorks-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		1F90C9891D42B5A2005B8FE3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C7217B4EBA611F921BCEECE /* Pods-Wuorks.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Wuorks/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "wuorks-inc.Wuorks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Wuorks/Wuorks-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -547,6 +643,7 @@
 				1F90C9891D42B5A2005B8FE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F90C98A1D42B5A2005B8FE3 /* Build configuration list for PBXNativeTarget "WuorksTests" */ = {
 			isa = XCConfigurationList;
@@ -555,6 +652,7 @@
 				1F90C98C1D42B5A2005B8FE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F90C98D1D42B5A2005B8FE3 /* Build configuration list for PBXNativeTarget "WuorksUITests" */ = {
 			isa = XCConfigurationList;
@@ -563,6 +661,7 @@
 				1F90C98F1D42B5A2005B8FE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
