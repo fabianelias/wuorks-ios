@@ -59,31 +59,18 @@ class Home: UIViewController {
         super.didReceiveMemoryWarning()
         
     }
+    
     @IBAction func logout(sender: AnyObject) {
         
         NSUserDefaults.standardUserDefaults().setBool(false,forKey:"isUserLoggedIn");
+        NSUserDefaults.standardUserDefaults().removePersistentDomainForName(NSBundle.mainBundle().bundleIdentifier!)
         NSUserDefaults.standardUserDefaults().synchronize();
         
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         let miVistaDos = storyBoard.instantiateViewControllerWithIdentifier("welcome") as! Welcome_index
         self.presentViewController(miVistaDos, animated:true, completion:nil)
         
-        //self.performSegueWithIdentifier("userConnect", sender: self);
         
     }
-    /*
-    override func viewDidAppear(animated: Bool)
-    {
-        NSUserDefaults.standardUserDefaults().synchronize();
-        let isUserLoggedIn = NSUserDefaults.standardUserDefaults().boolForKey("isUserLoggedIn");
-        
-        if(!isUserLoggedIn)
-        {
-            self.performSegueWithIdentifier("userConnect", sender: self);
-        }
-        
-        
-    }*/
-    
     
 }

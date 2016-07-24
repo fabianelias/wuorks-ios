@@ -17,23 +17,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon" translatesAutoresizingMaskIntoConstraints="NO" id="9q5-uZ-mBw">
-                                <rect key="frame" x="250" y="250" width="100" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="XtP-mM-wfm"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wuorks App v1.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n3W-Rk-AiH">
                                 <rect key="frame" x="232" y="571" width="137" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon-61" translatesAutoresizingMaskIntoConstraints="NO" id="9q5-uZ-mBw">
+                                <rect key="frame" x="250" y="50" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="XtP-mM-wfm"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="9q5-uZ-mBw" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="8fZ-kn-04s"/>
-                            <constraint firstItem="9q5-uZ-mBw" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="230" id="9jB-Gd-p0E"/>
+                            <constraint firstItem="9q5-uZ-mBw" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-200" id="8fZ-kn-04s"/>
+                            <constraint firstItem="9q5-uZ-mBw" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="30" id="9jB-Gd-p0E"/>
                             <constraint firstItem="9q5-uZ-mBw" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="xcy-Co-Ppm"/>
                         </constraints>
                     </view>
@@ -44,6 +44,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Icon" width="57" height="57"/>
+        <image name="Icon-61" width="60" height="60"/>
     </resources>
 </document>

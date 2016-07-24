@@ -56,7 +56,6 @@ class Login_model {
                     prefs.setValue("\(avatar)", forKey: "avatar")
                     
                     prefs.synchronize()
-                    
                                      
                 }
             }

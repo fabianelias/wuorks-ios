@@ -14,6 +14,7 @@ class Register: UIViewController {
     
     @IBOutlet weak var registerView: UIWebView!
     @IBOutlet weak var returnBtn: UIButton!
+    @IBOutlet weak var actLoad: UIActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +31,13 @@ class Register: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func webViewDidStartLoad(_ : UIWebView){
+        self.actLoad.startAnimating()
+    }
+    func webViewDidFinishLoad(_ : UIWebView){
+        self.actLoad.stopAnimating()
     }
 
     

@@ -10,6 +10,12 @@
 		1F1AB7DE1D42F53C00A01FFA /* Login_model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1AB7DD1D42F53C00A01FFA /* Login_model.swift */; };
 		1F1AB7E21D42FD5000A01FFA /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1AB7E11D42FD5000A01FFA /* Config.swift */; };
 		1F1AB7E41D430BDA00A01FFA /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1AB7E31D430BDA00A01FFA /* Home.swift */; };
+		1F551E391D444A5D00BBE7FA /* UIImageExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F551E381D444A5D00BBE7FA /* UIImageExt.swift */; };
+		1F551E3B1D44542700BBE7FA /* PresentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F551E3A1D44542700BBE7FA /* PresentView.swift */; };
+		1F551E3D1D445A5600BBE7FA /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F551E3C1D445A5600BBE7FA /* MapView.swift */; };
+		1F551E3F1D445FFA00BBE7FA /* CustomAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F551E3E1D445FFA00BBE7FA /* CustomAnnotation.swift */; };
+		1F551E411D4485EB00BBE7FA /* CustomAnnotation2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F551E401D4485EB00BBE7FA /* CustomAnnotation2.swift */; };
+		1F551E431D44955600BBE7FA /* DetailUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F551E421D44955600BBE7FA /* DetailUser.swift */; };
 		1F90C9631D42B5A1005B8FE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F90C9621D42B5A1005B8FE3 /* AppDelegate.swift */; };
 		1F90C9651D42B5A1005B8FE3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F90C9641D42B5A1005B8FE3 /* ViewController.swift */; };
 		1F90C9681D42B5A1005B8FE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F90C9661D42B5A1005B8FE3 /* Main.storyboard */; };
@@ -23,7 +29,7 @@
 		1F90C99C1D42D0B2005B8FE3 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F90C99B1D42D0B2005B8FE3 /* Login.swift */; };
 		1F90C99E1D42EC00005B8FE3 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F90C99D1D42EC00005B8FE3 /* Register.swift */; };
 		1FF8250A1D434FC500970BCF /* Home_principal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF825091D434FC400970BCF /* Home_principal.swift */; };
-		F93C8A6B951ACB856BB644E6 /* Pods_Wuorks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 753E07C797B7C413B8144D6E /* Pods_Wuorks.framework */; };
+		91348AAD0572F138E1D2EEC5 /* Pods_Wuorks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 725B9DD57DB8A63759E3DB7D /* Pods_Wuorks.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +54,12 @@
 		1F1AB7DF1D42FADD00A01FFA /* Wuorks-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Wuorks-Bridging-Header.h"; sourceTree = "<group>"; };
 		1F1AB7E11D42FD5000A01FFA /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		1F1AB7E31D430BDA00A01FFA /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		1F551E381D444A5D00BBE7FA /* UIImageExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExt.swift; sourceTree = "<group>"; };
+		1F551E3A1D44542700BBE7FA /* PresentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentView.swift; sourceTree = "<group>"; };
+		1F551E3C1D445A5600BBE7FA /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		1F551E3E1D445FFA00BBE7FA /* CustomAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAnnotation.swift; sourceTree = "<group>"; };
+		1F551E401D4485EB00BBE7FA /* CustomAnnotation2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAnnotation2.swift; sourceTree = "<group>"; };
+		1F551E421D44955600BBE7FA /* DetailUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailUser.swift; sourceTree = "<group>"; };
 		1F90C95F1D42B5A0005B8FE3 /* Wuorks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wuorks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F90C9621D42B5A1005B8FE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F90C9641D42B5A1005B8FE3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -67,7 +79,7 @@
 		1F90C99B1D42D0B2005B8FE3 /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		1F90C99D1D42EC00005B8FE3 /* Register.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
 		1FF825091D434FC400970BCF /* Home_principal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home_principal.swift; sourceTree = "<group>"; };
-		753E07C797B7C413B8144D6E /* Pods_Wuorks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wuorks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		725B9DD57DB8A63759E3DB7D /* Pods_Wuorks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wuorks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C7217B4EBA611F921BCEECE /* Pods-Wuorks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wuorks.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wuorks/Pods-Wuorks.release.xcconfig"; sourceTree = "<group>"; };
 		F2AAB8847A7FD79C39372639 /* Pods-Wuorks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wuorks.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Wuorks/Pods-Wuorks.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,7 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F93C8A6B951ACB856BB644E6 /* Pods_Wuorks.framework in Frameworks */,
+				91348AAD0572F138E1D2EEC5 /* Pods_Wuorks.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,6 +146,7 @@
 				1F90C9691D42B5A1005B8FE3 /* Assets.xcassets */,
 				1F90C96B1D42B5A1005B8FE3 /* LaunchScreen.storyboard */,
 				1F90C96E1D42B5A1005B8FE3 /* Info.plist */,
+				1F551E3A1D44542700BBE7FA /* PresentView.swift */,
 			);
 			path = Wuorks;
 			sourceTree = "<group>";
@@ -165,6 +178,8 @@
 				1F90C99D1D42EC00005B8FE3 /* Register.swift */,
 				1F1AB7E31D430BDA00A01FFA /* Home.swift */,
 				1FF825091D434FC400970BCF /* Home_principal.swift */,
+				1F551E3C1D445A5600BBE7FA /* MapView.swift */,
+				1F551E421D44955600BBE7FA /* DetailUser.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -189,6 +204,9 @@
 			children = (
 				1F90C9971D42C164005B8FE3 /* Globals_functions.swift */,
 				1F1AB7DF1D42FADD00A01FFA /* Wuorks-Bridging-Header.h */,
+				1F551E381D444A5D00BBE7FA /* UIImageExt.swift */,
+				1F551E3E1D445FFA00BBE7FA /* CustomAnnotation.swift */,
+				1F551E401D4485EB00BBE7FA /* CustomAnnotation2.swift */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -213,7 +231,7 @@
 		AFA69988914AEDF999DD2513 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				753E07C797B7C413B8144D6E /* Pods_Wuorks.framework */,
+				725B9DD57DB8A63759E3DB7D /* Pods_Wuorks.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -403,15 +421,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F551E3B1D44542700BBE7FA /* PresentView.swift in Sources */,
 				1F90C9651D42B5A1005B8FE3 /* ViewController.swift in Sources */,
+				1F551E3F1D445FFA00BBE7FA /* CustomAnnotation.swift in Sources */,
 				1F90C9961D42C103005B8FE3 /* Welcome.swift in Sources */,
 				1F1AB7E41D430BDA00A01FFA /* Home.swift in Sources */,
 				1F1AB7E21D42FD5000A01FFA /* Config.swift in Sources */,
 				1FF8250A1D434FC500970BCF /* Home_principal.swift in Sources */,
+				1F551E391D444A5D00BBE7FA /* UIImageExt.swift in Sources */,
+				1F551E3D1D445A5600BBE7FA /* MapView.swift in Sources */,
 				1F90C9981D42C164005B8FE3 /* Globals_functions.swift in Sources */,
+				1F551E411D4485EB00BBE7FA /* CustomAnnotation2.swift in Sources */,
 				1F90C99C1D42D0B2005B8FE3 /* Login.swift in Sources */,
 				1F90C99E1D42EC00005B8FE3 /* Register.swift in Sources */,
 				1F1AB7DE1D42F53C00A01FFA /* Login_model.swift in Sources */,
+				1F551E431D44955600BBE7FA /* DetailUser.swift in Sources */,
 				1F90C99A1D42C63B005B8FE3 /* Welcome_index.swift in Sources */,
 				1F90C9631D42B5A1005B8FE3 /* AppDelegate.swift in Sources */,
 			);
@@ -556,6 +580,7 @@
 			baseConfigurationReference = F2AAB8847A7FD79C39372639 /* Pods-Wuorks.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Wuorks/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -572,6 +597,7 @@
 			baseConfigurationReference = 8C7217B4EBA611F921BCEECE /* Pods-Wuorks.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Wuorks/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
