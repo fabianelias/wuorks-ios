@@ -23,21 +23,19 @@ class Home: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        CustomizeView()
         
-        self.title = "Ajustes"
-        self.view.backgroundColor = gbf.setUiColor(0xfbfbfb)//0x03a9f4
-        self.imgBackground.backgroundColor = self.gbf.setUiColor(0x607D8B)
         let prefs = NSUserDefaults.standardUserDefaults()
         
         
         if let username = prefs.stringForKey("username"){
             self.username.text = username
-            self.username.textColor = self.gbf.setUiColor(0xCFD8DC)
+            self.username.textColor = self.gbf.setUiColor(0x999999)
         }
         
         if let name = prefs.stringForKey("name"){
             self.nameUser.text = name
-            self.nameUser.textColor = self.gbf.setUiColor(0xCFD8DC)
+            self.nameUser.textColor = self.gbf.setUiColor(0x999999)
         }
         
         if let avatar = prefs.stringForKey("avatar"){
@@ -55,6 +53,23 @@ class Home: UIViewController {
         
     }
     
+    func CustomizeView(){
+        
+        
+        self.title = "Ajustes"
+        self.view.backgroundColor = gbf.setUiColor(0xffffff)//0x03a9f4
+        self.imgBackground.backgroundColor = self.gbf.setUiColor(0xfbfbfb)
+        
+        //Elimina el borde en esta vista y todas sus subvistas
+        for parent in self.navigationController!.navigationBar.subviews {
+            for childView in parent.subviews {
+                if(childView is UIImageView) {
+                    childView.removeFromSuperview()
+                }
+            }
+        }
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         

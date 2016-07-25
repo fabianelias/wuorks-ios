@@ -48,7 +48,6 @@ class Welcome_index: UIViewController, UIPageViewControllerDataSource {
         
         self.pageViewController.view.frame = CGRectMake(0,-20, self.view.frame.width, self.view.frame.size.height - 40)
         
-    5
         
         self.addChildViewController(self.pageViewController)
         

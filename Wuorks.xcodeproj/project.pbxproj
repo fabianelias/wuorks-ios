@@ -10,6 +10,9 @@
 		1F1AB7DE1D42F53C00A01FFA /* Login_model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1AB7DD1D42F53C00A01FFA /* Login_model.swift */; };
 		1F1AB7E21D42FD5000A01FFA /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1AB7E11D42FD5000A01FFA /* Config.swift */; };
 		1F1AB7E41D430BDA00A01FFA /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1AB7E31D430BDA00A01FFA /* Home.swift */; };
+		1F3FAC1A1D45ACBA003E1CBC /* Profesiones.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3FAC191D45ACB9003E1CBC /* Profesiones.swift */; };
+		1F3FAC1C1D45B28C003E1CBC /* NotProfessions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3FAC1B1D45B28C003E1CBC /* NotProfessions.swift */; };
+		1F3FAC1E1D45BFE2003E1CBC /* Contracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3FAC1D1D45BFE2003E1CBC /* Contracts.swift */; };
 		1F551E391D444A5D00BBE7FA /* UIImageExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F551E381D444A5D00BBE7FA /* UIImageExt.swift */; };
 		1F551E3B1D44542700BBE7FA /* PresentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F551E3A1D44542700BBE7FA /* PresentView.swift */; };
 		1F551E3D1D445A5600BBE7FA /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F551E3C1D445A5600BBE7FA /* MapView.swift */; };
@@ -54,6 +57,9 @@
 		1F1AB7DF1D42FADD00A01FFA /* Wuorks-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Wuorks-Bridging-Header.h"; sourceTree = "<group>"; };
 		1F1AB7E11D42FD5000A01FFA /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		1F1AB7E31D430BDA00A01FFA /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		1F3FAC191D45ACB9003E1CBC /* Profesiones.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profesiones.swift; sourceTree = "<group>"; };
+		1F3FAC1B1D45B28C003E1CBC /* NotProfessions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotProfessions.swift; sourceTree = "<group>"; };
+		1F3FAC1D1D45BFE2003E1CBC /* Contracts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contracts.swift; sourceTree = "<group>"; };
 		1F551E381D444A5D00BBE7FA /* UIImageExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExt.swift; sourceTree = "<group>"; };
 		1F551E3A1D44542700BBE7FA /* PresentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentView.swift; sourceTree = "<group>"; };
 		1F551E3C1D445A5600BBE7FA /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
@@ -180,6 +186,8 @@
 				1FF825091D434FC400970BCF /* Home_principal.swift */,
 				1F551E3C1D445A5600BBE7FA /* MapView.swift */,
 				1F551E421D44955600BBE7FA /* DetailUser.swift */,
+				1F3FAC191D45ACB9003E1CBC /* Profesiones.swift */,
+				1F3FAC1D1D45BFE2003E1CBC /* Contracts.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -195,6 +203,7 @@
 		1F90C9921D42B843005B8FE3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1F3FAC1B1D45B28C003E1CBC /* NotProfessions.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -424,7 +433,9 @@
 				1F551E3B1D44542700BBE7FA /* PresentView.swift in Sources */,
 				1F90C9651D42B5A1005B8FE3 /* ViewController.swift in Sources */,
 				1F551E3F1D445FFA00BBE7FA /* CustomAnnotation.swift in Sources */,
+				1F3FAC1E1D45BFE2003E1CBC /* Contracts.swift in Sources */,
 				1F90C9961D42C103005B8FE3 /* Welcome.swift in Sources */,
+				1F3FAC1C1D45B28C003E1CBC /* NotProfessions.swift in Sources */,
 				1F1AB7E41D430BDA00A01FFA /* Home.swift in Sources */,
 				1F1AB7E21D42FD5000A01FFA /* Config.swift in Sources */,
 				1FF8250A1D434FC500970BCF /* Home_principal.swift in Sources */,
@@ -436,6 +447,7 @@
 				1F90C99E1D42EC00005B8FE3 /* Register.swift in Sources */,
 				1F1AB7DE1D42F53C00A01FFA /* Login_model.swift in Sources */,
 				1F551E431D44955600BBE7FA /* DetailUser.swift in Sources */,
+				1F3FAC1A1D45ACBA003E1CBC /* Profesiones.swift in Sources */,
 				1F90C99A1D42C63B005B8FE3 /* Welcome_index.swift in Sources */,
 				1F90C9631D42B5A1005B8FE3 /* AppDelegate.swift in Sources */,
 			);

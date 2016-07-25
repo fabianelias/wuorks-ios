@@ -45,8 +45,7 @@ class Login_model {
                     let name     = data[0]["name"] as! String
                     let lastname = data[0]["last_name_p"] as! String
                     let avatar   = data[0]["avatar"] as! String
-                    
-                    resp = "\(username)"
+                    let id_user  = data[0]["id_user"] as! String
                     
                     let prefs = NSUserDefaults.standardUserDefaults()
                     prefs.setBool(true,forKey:"isUserLoggedIn");
@@ -54,9 +53,12 @@ class Login_model {
                     prefs.setValue("\(username)", forKey: "username")
                     prefs.setValue("\(name) \(lastname)", forKey: "name")
                     prefs.setValue("\(avatar)", forKey: "avatar")
+                    prefs.setValue("\(id_user)", forKey: "id_user")
                     
                     prefs.synchronize()
-                                     
+                    
+                    resp = "\(username)"
+                    
                 }
             }
         }

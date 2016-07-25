@@ -31,8 +31,8 @@ class Globals_functions{
         let titleLabel = UILabel(frame: CGRectMake(0, -5, 0, 0))
         
         titleLabel.backgroundColor = UIColor.clearColor()
-        titleLabel.textColor = UIColor.grayColor()
-        titleLabel.font = UIFont.boldSystemFontOfSize(18)
+        titleLabel.textColor = UIColor.blackColor()
+        titleLabel.font = UIFont.boldSystemFontOfSize(17)
         titleLabel.text = title
         titleLabel.sizeToFit()
         

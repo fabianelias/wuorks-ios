@@ -20,7 +20,17 @@ class Home_principal: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        self.title = "Wuorks"
+        
+        self.view.endEditing(true)
+        
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
+        imageView.contentMode = .ScaleAspectFit
+        
+        let image = UIImage(named: "icono-Small")
+        imageView.image = image
+        navigationItem.titleView = imageView
+        
+        
         
         CustomizeView()
         
@@ -34,6 +44,12 @@ class Home_principal: UIViewController, UITextFieldDelegate {
         
         self.view.backgroundColor = gbf.setUiColor(0xfbfbfb)
         
+        //Padding al buscador
+        let paddingView = UIView(frame: CGRectMake(0, 0, 5, self.wuorksArea.frame.height))
+        wuorksArea.leftView = paddingView
+        wuorksArea.leftViewMode = UITextFieldViewMode.Always
+        
+        
         self.wuorksArea.layer.cornerRadius = 5.0
         self.wuorksArea.clipsToBounds = true
         let imageView = UIImageView();
@@ -41,16 +57,29 @@ class Home_principal: UIViewController, UITextFieldDelegate {
         imageView.image = image;
         self.wuorksArea.leftView = imageView;
         self.wuorksArea.leftViewMode = UITextFieldViewMode.Always
-        imageView.frame = CGRect(x:25, y: 50, width: 20, height: 20)
+        imageView.frame = CGRectMake(5, 0, 15, 15)//CGRect(x:25, y: 50, width: 20, height: 20)
         self.wuorksArea.addSubview(imageView)
         
         
         
-        Alamofire.request(.GET, "https://www.wuorks.cl/asset_app/bg-2.jpg").response { (request, response, data, error) in
+        Alamofire.request(.GET, "https://www.wuorks.cl/asset_app/bg-1.jpg").response { (request, response, data, error) in
             self.imgBackground.image = UIImage(data: data!, scale:1)
             self.imgBackground.backgroundColor = self.gbf.setUiColor(0xffffff)
             self.imgBackground.layer.borderColor = self.gbf.setUiColor(0xffffff).CGColor
         }
+        
+        //Elimina el borde en esta vista y todas sus subvistas
+        for parent in self.navigationController!.navigationBar.subviews {
+            for childView in parent.subviews {
+                if(childView is UIImageView) {
+                    childView.removeFromSuperview()
+                }
+            }
+        }
+        
+        
+        
+        
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {

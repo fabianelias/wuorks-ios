@@ -19,24 +19,29 @@ class MapView: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     var config = Config()
     let locationManeger = CLLocationManager()
     
-    var  wuorks_area = ""
+    var  wuorks_area:String! = ""
     var nameWuokers = [String]()
     var nameService = [String]()
-    var avatar = [String]()
+    var wuokersKey = [String]()
+    var ProfessKey = [String]()
     
     @IBOutlet weak var mapWuorks: MKMapView!
     @IBOutlet weak var titleHead: UILabel!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //self.tabBarController?.tabBar.hidden = true
         searchWuokersMap()
         myCurrentLocation()
         
-        self.title = wuorks_area
+        //self.title = wuorks_area
+        self.navigationItem.titleView = gbf.setTitle("Resultados", subtitle: "para tu busqueda")
+        
         self.titleHead.layer.cornerRadius = 20
         self.titleHead.clipsToBounds = true
         self.titleHead.backgroundColor = gbf.setUiColor(0xffffff)
+        
     }
     
     func myCurrentLocation(){
@@ -71,6 +76,7 @@ class MapView: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
                             
                             if let coor = response.result.value {
                                 
+                                //print(wuoker)
                                 
                                 let response = coor as! NSDictionary
                                 
@@ -83,8 +89,10 @@ class MapView: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
                                 
                                 let name = wuoker["username"] as! String
                                 let service = wuoker["job_description"] as! String
-                                let descService = wuoker["job_description"] as! String
                                 let avatarU = wuoker["avatar"] as! String
+                                
+                                let wuoker_key  = wuoker["wuorks_key"] as! String
+                                let service_key = wuoker["key_profession"] as! String
                                 
                                 let position = CLLocationCoordinate2DMake((location[0]["lat"] as! NSNumber).doubleValue, (location[0]["lng"] as! NSNumber).doubleValue )
                                 
@@ -101,7 +109,8 @@ class MapView: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
                                 
                                 self.nameWuokers.append("\(name)")
                                 self.nameService.append("\(service)")
-                                self.avatar.append("\(avatarU)")
+                                self.wuokersKey.append("\(wuoker_key)")
+                                self.ProfessKey.append("\(service_key)")
                                 
                             }
                         }
@@ -139,7 +148,7 @@ class MapView: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
         let imageUser = cpa.avatarUser
         
         Alamofire.request(.GET, "https://www.wuorks.cl/asset/img/user_avatar/"+imageUser).response { (request, response, data, error) in
-            let leftIconView = UIImageView(frame: CGRectMake(0, 0, 60, 60))
+            let leftIconView = UIImageView(frame: CGRectMake(0, 0, 53, 53))
             leftIconView.image = UIImage(data: data!)
             anView!.leftCalloutAccessoryView = leftIconView
             anView!.canShowCallout = true
@@ -156,10 +165,7 @@ class MapView: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
         if (control as? UIButton)?.buttonType == UIButtonType.DetailDisclosure {
             mapView.deselectAnnotation(view.annotation, animated: false)
             
-            
-            let index:Int! = 2
-            print(index)
-            performSegueWithIdentifier("detailUser", sender: "das")
+            performSegueWithIdentifier("detailUser", sender: view)
             let backItem = UIBarButtonItem()
             backItem.title = ""
             navigationItem.backBarButtonItem = backItem
@@ -193,13 +199,42 @@ class MapView: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
         if segue.identifier == "detailUser"
         {
             if let destinationVC = segue.destinationViewController as? DetailUser{
+            
+                let username:String! = (sender as! MKAnnotationView).annotation!.title!
                 
-                let usernames = sender//(sender as! MKAnnotationView).annotation!.title
-                //let wuorks_key = (sender as! CustomAnnotation).avatarUser
-                destinationVC.username = usernames! as! String as String!
-                //destinationVC.username = usernames! as String!
+                var index:Int = 0
+                let totalUser = nameWuokers.count
+                
+                
+                for _ in 0 ..< totalUser{
+                    
+                    //print(username)
+                    
+                    if(username == nameWuokers[index]){
+                        //print("username : "+username)
+                        //print(nameWuokers[index])
+                        break
+                    }
+                    
+                    ++index
+                }
+                let wuokers_key = self.wuokersKey[index]
+                let service_key = self.ProfessKey[index]
+                
+                destinationVC.username = username
+                destinationVC.wuorks_key = wuokers_key
+                destinationVC.key_profession = service_key
             }
         }
+    }
+    
+    override func viewDidAppear(animated: Bool)
+    {
+        self.navigationController?.navigationBar.barTintColor = UIColor.whiteColor()
+        let proxyViewForStatusBar : UIView = UIView(frame: CGRectMake(0, 0,self.view.frame.size.width, 20))
+        proxyViewForStatusBar.backgroundColor = UIColor.blackColor()
+        self.view.addSubview(proxyViewForStatusBar)
+        
     }
     
     override func didReceiveMemoryWarning() {

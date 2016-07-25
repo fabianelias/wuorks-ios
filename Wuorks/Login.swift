@@ -47,6 +47,16 @@ class Login: UIViewController, UITextFieldDelegate {
         self.loginFacebook.layer.cornerRadius = 9.0
         self.loginFacebook.clipsToBounds = true
         
+        
+        //Padding al buscador
+        let paddingView = UIView(frame: CGRectMake(0, 0, 5, self.inputEmail.frame.height))
+        inputEmail.leftView = paddingView
+        inputEmail.leftViewMode = UITextFieldViewMode.Always
+        
+        //Padding al buscador
+        let paddingViews = UIView(frame: CGRectMake(0, 0, 5, self.inputPass.frame.height))
+        inputPass.leftView = paddingViews
+        inputPass.leftViewMode = UITextFieldViewMode.Always
     }
     
     //---------------------------------------------------------------------
