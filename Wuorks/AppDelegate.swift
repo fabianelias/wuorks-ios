@@ -22,6 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         pageController.backgroundColor = UIColor.whiteColor()
         
         UINavigationBar.appearance().barTintColor = UIColor.whiteColor()
+        UINavigationBar.appearance().tintColor = globalFunction.setUiColor(0x2895F1)
         
         return true
     }

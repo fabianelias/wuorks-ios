@@ -20,6 +20,8 @@ class Profesiones: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.view.backgroundColor = gbf.setUiColor(0xe9ebee)
+        
         scrollProfes.contentSize.height = 1500
         getProfessions()
         

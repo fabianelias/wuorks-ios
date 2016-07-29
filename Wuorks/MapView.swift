@@ -35,8 +35,8 @@ class MapView: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
         searchWuokersMap()
         myCurrentLocation()
         
-        //self.title = wuorks_area
-        self.navigationItem.titleView = gbf.setTitle("Resultados", subtitle: "para tu busqueda")
+        self.title = wuorks_area
+        //self.navigationItem.titleView = gbf.setTitle("Resultados", subtitle: "para tu busqueda")
         
         self.titleHead.layer.cornerRadius = 20
         self.titleHead.clipsToBounds = true
@@ -231,9 +231,12 @@ class MapView: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     override func viewDidAppear(animated: Bool)
     {
         self.navigationController?.navigationBar.barTintColor = UIColor.whiteColor()
+        self.navigationController?.navigationBar.tintColor = gbf.setUiColor(0x2895F1)
+        
         let proxyViewForStatusBar : UIView = UIView(frame: CGRectMake(0, 0,self.view.frame.size.width, 20))
         proxyViewForStatusBar.backgroundColor = UIColor.blackColor()
         self.view.addSubview(proxyViewForStatusBar)
+        UIApplication.sharedApplication().statusBarStyle = UIStatusBarStyle.Default
         
     }
     

@@ -31,14 +31,14 @@ class Globals_functions{
         let titleLabel = UILabel(frame: CGRectMake(0, -5, 0, 0))
         
         titleLabel.backgroundColor = UIColor.clearColor()
-        titleLabel.textColor = UIColor.blackColor()
+        titleLabel.textColor = UIColor.whiteColor()
         titleLabel.font = UIFont.boldSystemFontOfSize(17)
         titleLabel.text = title
         titleLabel.sizeToFit()
         
         let subtitleLabel = UILabel(frame: CGRectMake(0, 18, 0, 0))
         subtitleLabel.backgroundColor = UIColor.clearColor()
-        subtitleLabel.textColor = UIColor.blackColor()
+        subtitleLabel.textColor = UIColor.whiteColor()
         subtitleLabel.font = UIFont.systemFontOfSize(12)
         subtitleLabel.text = subtitle
         subtitleLabel.sizeToFit()

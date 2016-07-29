@@ -9,26 +9,35 @@
 import UIKit
 import Alamofire
 import SVProgressHUD
-
-class DetailUser: UIViewController {
+import MapKit
+class DetailUser: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate  {
     
     var gbf = Globals_functions()
     var config = Config()
     
     
-    var username = ""
+    var username:String! = ""
     var wuorks_key = ""
     var key_profession = ""
     
     @IBOutlet weak var avatarWuokers: UIImageView!
     @IBOutlet weak var professionWuokers: UILabel!
+    @IBOutlet weak var imgBG: UIImageView!
+    @IBOutlet weak var scrollDetail: UIScrollView!
+    @IBOutlet weak var usernameLabel: UILabel!
     
+    @IBOutlet weak var imgBgDescription: UIImageView!
+    @IBOutlet weak var labelDescription: UILabel!
+    @IBOutlet weak var mapUser: MKMapView!
     
     override func viewDidLoad() {
+        CView()
         super.viewDidLoad()
-        //self.tabBarController?.tabBar.hidden = true
-        self.title = username
-        self.title?.uppercaseString
+        
+        scrollDetail.contentSize.height = 1500
+        let userTitle:String! = username.stringByReplacingOccurrencesOfString("@", withString: "")
+        print(userTitle.lowercaseString)//\()
+        
         //
         SVProgressHUD.showWithStatus("Cargando...")
         load_information()
@@ -53,8 +62,12 @@ class DetailUser: UIViewController {
                 let address  = wuoker[0]["address"] as! String
                 let imageUser = wuoker[0]["avatar"] as! String
                 self.title = name
-                self.professionWuokers.text = "Profesión - "+job
                 
+                let jobTitle:String! = job.stringByReplacingOccurrencesOfString("+", withString: " ")
+                self.professionWuokers.text = "Profesión - \(jobTitle)"
+                self.labelDescription.text = "\(descjob)"
+                
+                self.usernameLabel.text = "\(name)"
                 Alamofire.request(.GET, "https://www.wuorks.cl/asset/img/user_avatar/"+imageUser).response { (request, response, data, error) in
                     self.avatarWuokers.image = UIImage(data: data!, scale:1)
                     self.avatarWuokers.backgroundColor = self.gbf.setUiColor(0xffffff)
@@ -65,7 +78,7 @@ class DetailUser: UIViewController {
                 }
                 
                 let urlAPI = "https://maps.googleapis.com/maps/api/geocode/json"
-                /*
+                
                 Alamofire.request(.GET, urlAPI , parameters: ["address": address]).responseJSON { response in
                     
                     if let coor = response.result.value {
@@ -91,7 +104,7 @@ class DetailUser: UIViewController {
                         self.mapUser.setRegion(region, animated: true)
                         
                     }
-                }*/
+                }
                 
                 
             }
@@ -100,21 +113,32 @@ class DetailUser: UIViewController {
     }
     
     
-    override func viewDidAppear(animated: Bool)
+    func CView()
     {
+        self.view.backgroundColor = gbf.setUiColor(0xfbfbfb)//(0xe9ebee)
        
-        //self.navigationController?.navigationBar.barTintColor = UIColor.redColor()
-        /*
-        UINavigationBar.appearance().tintColor = UIColor(red: 0.48627450980392156, green: 0.070588235294117646, blue: 0.46274509803921571, alpha: 1)
+        self.navigationController?.navigationBar.barTintColor = gbf.setUiColor(0x2895F1)//UIColor.redColor()
+        self.imgBG.backgroundColor = gbf.setUiColor(0x2895F1)
+        self.navigationController?.navigationBar.tintColor = gbf.setUiColor(0xfbfbfb)
+        
+        UINavigationBar.appearance().tintColor = gbf.setUiColor(0x2895F1)
+        
         UIApplication.sharedApplication().statusBarStyle = UIStatusBarStyle.LightContent
         
         let proxyViewForStatusBar : UIView = UIView(frame: CGRectMake(0, 0,self.view.frame.size.width, 20))
-        proxyViewForStatusBar.backgroundColor = UIColor(red: 0.48627450980392156, green: 0.070588235294117646, blue: 0.46274509803921571, alpha: 1)
-        self.view.addSubview(proxyViewForStatusBar)*/
+        proxyViewForStatusBar.backgroundColor = gbf.setUiColor(0x2895F1)
+        self.view.addSubview(proxyViewForStatusBar)
         
+        
+        self.imgBgDescription.layer.cornerRadius = 4
+        self.imgBgDescription.clipsToBounds = true
+        self.imgBgDescription.backgroundColor = gbf.setUiColor(0xffffff)
         
     }
     
+    @IBAction func dismissModal(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

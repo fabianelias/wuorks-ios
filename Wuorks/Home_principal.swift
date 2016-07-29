@@ -42,7 +42,7 @@ class Home_principal: UIViewController, UITextFieldDelegate {
     
     func CustomizeView(){
         
-        self.view.backgroundColor = gbf.setUiColor(0xfbfbfb)
+        self.view.backgroundColor = gbf.setUiColor(0xe9ebee)
         
         //Padding al buscador
         let paddingView = UIView(frame: CGRectMake(0, 0, 5, self.wuorksArea.frame.height))
@@ -61,8 +61,9 @@ class Home_principal: UIViewController, UITextFieldDelegate {
         self.wuorksArea.addSubview(imageView)
         
         
-        
-        Alamofire.request(.GET, "https://www.wuorks.cl/asset_app/bg-1.jpg").response { (request, response, data, error) in
+        let url_image = "https://static.teamtreehouse.com/assets/views/accounts/referrals/referrals-64e85dde817cb7b42da59b0656b7c455.svg"
+        //https://www.wuorks.cl/asset_app/bg-1.jpg
+        Alamofire.request(.GET, url_image).response { (request, response, data, error) in
             self.imgBackground.image = UIImage(data: data!, scale:1)
             self.imgBackground.backgroundColor = self.gbf.setUiColor(0xffffff)
             self.imgBackground.layer.borderColor = self.gbf.setUiColor(0xffffff).CGColor
